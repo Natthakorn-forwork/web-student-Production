@@ -5,7 +5,7 @@ import StudentDashboard from "../views/dashboards/StudentDashboard.vue";
 import TeacherDashboard from "../views/dashboards/TeacherDashboard.vue";
 
 const routes = [
-  { path: "/", component: Login },
+  { path: "/login", component: Login },
   { path: "/student", component: StudentDashboard },
   { path: "/teacher", component: TeacherDashboard }
 ];
