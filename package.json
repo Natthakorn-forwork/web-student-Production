@@ -1,8 +1,7 @@
 {
-  "name": "student-manage-system",
   "private": true,
   "scripts": {
-    "dev": "cd frontend && npm run dev"
+    "build": "cd frontend && npm install && npm run build"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
