@@ -28,6 +28,22 @@
 </template>
 
 <script setup>
+
+const isDev = import.meta.env.DEV;
+
+const login = async () => {
+  if (isDev) {
+    // mock login
+    localStorage.setItem("token", "mock.token.value");
+    router.push("/student");
+    return;
+  }
+
+  // production call
+  await fetch("/.netlify/functions/login", { ... });
+};
+
+
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 
