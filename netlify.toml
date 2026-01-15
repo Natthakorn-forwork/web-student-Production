@@ -1,0 +1,10 @@
+[build]
+  functions = "netlify/functions"
+
+[dev]
+  command = "npm run dev"
+  targetPort = 5173
+  port = 8888
+  publish = "frontend"
+  framework = "#custom"
+  commandOrigin = "frontend"
